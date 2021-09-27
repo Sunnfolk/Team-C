@@ -5,13 +5,11 @@ public class EnemyMovement : MonoBehaviour
     public bool goingRight;
     [SerializeField] private float moveSpeed;
     private Rigidbody2D _Rigidbody2D;
-    private Collision _Collision;
     [SerializeField] private LayerMask whatIsGround;
 
     private void Start()
     {
         _Rigidbody2D = GetComponent<Rigidbody2D>();
-        _Collision = GetComponent<Collision>();
     }
 
     private void Update()
