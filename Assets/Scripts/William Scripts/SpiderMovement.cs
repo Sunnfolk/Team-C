@@ -1,5 +1,3 @@
-using System;
-using System.Timers;
 using UnityEngine;
 
 public class SpiderMovement : MonoBehaviour
@@ -9,6 +7,7 @@ public class SpiderMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     public float UpTimerCount;
     public float DownTimerCount;
+    public string action = "idle";
 
     private void Start()
     {
@@ -26,10 +25,12 @@ public class SpiderMovement : MonoBehaviour
         else if (Timer <= 0 && HitGround == false)
         {
             m_Rigidbody2D.gravityScale = 2.2f;
+            action = "down";
         }
         else if (Timer <= 0 && HitGround == true)
         {
             transform.Translate(Vector2.up * Time.deltaTime * 2.8f);
+            action = "up";
         }
 
   
@@ -42,11 +43,13 @@ public class SpiderMovement : MonoBehaviour
             m_Rigidbody2D.gravityScale = 0;
             HitGround = true;
             Timer = UpTimerCount;
+            action = "attack";
         }
         else if (other.transform.CompareTag("Top"))
         {
             HitGround = false;
             Timer = DownTimerCount;
+            action = "idle";
         }
     }
 }

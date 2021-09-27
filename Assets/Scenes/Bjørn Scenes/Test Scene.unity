@@ -634,6 +634,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 2323582325277881939, guid: 3d64bc7fb889a81499359a186a2652e5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323582325277881939, guid: 3d64bc7fb889a81499359a186a2652e5, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2323582325277881967, guid: 3d64bc7fb889a81499359a186a2652e5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -644,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2323582325277881967, guid: 3d64bc7fb889a81499359a186a2652e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 2323582325277881967, guid: 3d64bc7fb889a81499359a186a2652e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -900,6 +908,10 @@ PrefabInstance:
     - target: {fileID: 6884204651519993662, guid: b483d9c18b5cee347992a87c10dd2539, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884204651519993662, guid: b483d9c18b5cee347992a87c10dd2539, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7388202968762181869, guid: b483d9c18b5cee347992a87c10dd2539, type: 3}
       propertyPath: m_RootOrder
