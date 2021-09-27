@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 1820500161}
   - component: {fileID: 1820500163}
   - component: {fileID: 1820500162}
+  - component: {fileID: 1820500164}
   m_Layer: 0
   m_Name: Timmy
   m_TagString: Untagged
@@ -390,6 +391,18 @@ MonoBehaviour:
   jump: 0
   longJump: 0
   playMusic: 1
+--- !u!114 &1820500164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820500156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29afc895facd3b40a61d55ea9ba5502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2141323435
 PrefabInstance:
   m_ObjectHideFlags: 0
