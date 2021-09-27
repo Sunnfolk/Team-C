@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ec3e80-ae02-4138-9d75-e1403f126d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/William Scripts/SpiderTes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/William Scripts/SpiderTes.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-C/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/William Scripts/SpiderMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/William Scripts/SpiderMovement.cs" afterDir="false" />
     </list>

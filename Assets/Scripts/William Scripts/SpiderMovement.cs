@@ -25,11 +25,11 @@ public class SpiderMovement : MonoBehaviour
         }
         else if (Timer <= 0 && HitGround == false)
         {
-            m_Rigidbody2D.gravityScale = 3;
+            m_Rigidbody2D.gravityScale = 2.2f;
         }
         else if (Timer <= 0 && HitGround == true)
         {
-            transform.Translate(Vector2.up * Time.deltaTime * 1.8f);
+            transform.Translate(Vector2.up * Time.deltaTime * 2.8f);
         }
 
   
