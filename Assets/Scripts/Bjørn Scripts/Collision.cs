@@ -1,18 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
+    private SceneController _sceneController;
+    
     public LayerMask whatIsGround;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.CompareTag("Death"))
-        {
-            RestartScene();
-        }
+        _sceneController = GetComponent<SceneController>();
     }
-    
+
+    //TODO Add deathpit collision
+
     public bool IsGrounded()
     {
         var pos = transform.position;
@@ -20,10 +20,5 @@ public class Collision : MonoBehaviour
         var hit = Physics2D.Raycast(pos, Vector2.down, 1.2f, whatIsGround);
 
         return hit.collider != null;
-    }
-
-    private void RestartScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

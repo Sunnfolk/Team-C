@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private bool isDead = false;
+    
+    
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float maxVelocity = 24f;
@@ -33,14 +36,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        LongJump();
-        Coyote();
+        if (!isDead)
+        {
+            LongJump();
+            Coyote();
 
-        Jump();
+            Jump();
 
-        SetMaxVelocity();
+            SetMaxVelocity();
 
-        DistanceFallen();
+            DistanceFallen();
+        }
+        else
+        {
+            //TODO Death Animation and Reset Scene
+        }
     }
 
     private void LongJump()
