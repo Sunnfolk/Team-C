@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class GnomeMovement : MonoBehaviour
 {
     public bool goingRight;
     [SerializeField] private float moveSpeed;
@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
         var pos = transform.position + vec;
         
         //Debug.DrawRay(pos, Vector2.down, new Color(1f, 0f, 1f));
-        var hit = Physics2D.Raycast(pos, Vector2.down, 0.6f, whatIsGround);
+        var hit = Physics2D.Raycast(pos, Vector2.down, 1f, whatIsGround);
 
         return hit.collider != null;
     }
@@ -58,8 +58,6 @@ public class EnemyMovement : MonoBehaviour
         
         //Debug.DrawRay(pos, vec, new Color(1f, 0f, 1f));
         var hit = Physics2D.Raycast(pos, vec, 0.8f, whatIsDoor);
-        print("checking...");
-        print(hit.collider);
         return hit.collider != null;
     }
 }
