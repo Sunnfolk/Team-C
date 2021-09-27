@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
@@ -8,6 +9,14 @@ public class PlayerCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             SceneController.ResetScene();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Door"))
+        {
+            
         }
     }
 }

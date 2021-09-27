@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float moveSpeed;
     private Rigidbody2D _Rigidbody2D;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private LayerMask whatIsDoor;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        if (NoLedges() && !Wall())
+        if (NoLedges() && !Wall() && !Door())
         {
             var vel = _Rigidbody2D.velocity;
             var spd = goingRight ? new Vector2(moveSpeed, vel.y) : new Vector2(-moveSpeed, vel.y);
@@ -45,6 +46,20 @@ public class EnemyMovement : MonoBehaviour
         //Debug.DrawRay(pos, vec, new Color(1f, 0f, 1f));
         var hit = Physics2D.Raycast(pos, vec, 0.5f, whatIsGround);
 
+        return hit.collider != null;
+    }
+    
+    //Check if there is door in front of the enemy in current direction
+    //TODO Fix the Wall & Door collision. It doesn't return any collisions
+    private bool Door()
+    {
+        var vec = goingRight ? Vector2.right : Vector2.left;
+        var pos = transform.position;
+        
+        //Debug.DrawRay(pos, vec, new Color(1f, 0f, 1f));
+        var hit = Physics2D.Raycast(pos, vec, 0.8f, whatIsDoor);
+        print("checking...");
+        print(hit.collider);
         return hit.collider != null;
     }
 }
