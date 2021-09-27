@@ -13,11 +13,10 @@ public class Collision : MonoBehaviour
 
     //TODO Add deathpit collision
 
-    public bool IsGrounded()
+    public bool IsGrounded(Vector3 pos, float dist)
     {
-        var pos = transform.position;
         Debug.DrawRay(pos, Vector2.down, new Color(1f,0f,1f));
-        var hit = Physics2D.Raycast(pos, Vector2.down, 1.2f, whatIsGround);
+        var hit = Physics2D.Raycast(pos, Vector2.down, dist, whatIsGround);
 
         return hit.collider != null;
     }

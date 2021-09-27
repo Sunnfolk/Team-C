@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Coyote()
     {
-        if (_Collision.IsGrounded())
+        if (CheckGroundCollision())
         {
             canCoyote = true;
             _CoyoteTimeCounter = coyoteTime;
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetMaxVelocity()
     {
-        if (_Collision.IsGrounded()) return;
+        if (CheckGroundCollision()) return;
         if (_Rigidbody2D.velocity.y < -maxVelocity)
         {
             _Rigidbody2D.velocity = new Vector2(_Rigidbody2D.velocity.x, -maxVelocity);
@@ -129,5 +129,11 @@ public class PlayerMovement : MonoBehaviour
             fallDistance -= _Rigidbody2D.velocity.y * Time.deltaTime;
         }
         else fallDistance = 0;
+    }
+
+    private bool CheckGroundCollision()
+    {
+        return _Collision.IsGrounded(transform.position + new Vector3(-0.4f, 0f, 0f), 1.2f) ||
+               (_Collision.IsGrounded(transform.position + new Vector3(0.4f, 0f, 0f), 1.2f));
     }
 }
