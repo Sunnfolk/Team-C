@@ -1,59 +1,52 @@
+using System;
 using System.Timers;
 using UnityEngine;
 
 public class SpiderMovement : MonoBehaviour
 {
-    private float _FallSpeed = 2f;
+    private float Timer;
+    private bool HitGround = false;
+    private Rigidbody2D m_Rigidbody2D;
+    public float UpTimerCount;
+    public float DownTimerCount;
 
-    private float SpiderAttackTimer;
-    private float ResetTimer = 4f;
-    private Rigidbody2D _Rigidbody2D;
-    private Collision _Collision;
-
-    private string _Action = "idle";
-
-    void Start()
+    private void Start()
     {
-        _Rigidbody2D = GetComponent<Rigidbody2D>();
-        _Collision = GetComponent<Collision>();
-        
-        SpiderAttackTimer = ResetTimer;
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        Timer = DownTimerCount;
+        m_Rigidbody2D.gravityScale = 0;
     }
     
-    void Update()
+    private void Update()
     {
-        if (_Action == "idle")
+        if (Timer > 0)
         {
-            SpiderAttackTimer -= Time.deltaTime;
+            Timer -= Time.deltaTime;
+        }
+        else if (Timer <= 0 && HitGround == false)
+        {
+            m_Rigidbody2D.gravityScale = 3;
+        }
+        else if (Timer <= 0 && HitGround == true)
+        {
+            transform.Translate(Vector2.up * Time.deltaTime * 1.8f);
+        }
 
-            if (SpiderAttackTimer <= 0)
-            {
-                _Action = "down";
-                SpiderAttackTimer = ResetTimer;
-            }
-        }
-        else if (_Action == "down")
-        {
-            Move(-_FallSpeed);
-        }
-        else if (_Action == "attack")
-        {
-            print("attack");
-            _Action = "up";
-        }
-        else if (_Action == "up")
-        {
-            Move(_FallSpeed);
-        }
+  
     }
 
-    private void Move(float y)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        _Rigidbody2D.velocity = new Vector2(0f, y);
-        if (_Collision.IsGrounded())
+        if (other.transform.CompareTag("Ground"))
         {
-            _Action = "attack";
+            m_Rigidbody2D.gravityScale = 0;
+            HitGround = true;
+            Timer = UpTimerCount;
+        }
+        else if (other.transform.CompareTag("Top"))
+        {
+            HitGround = false;
+            Timer = DownTimerCount;
         }
     }
-    
 }
