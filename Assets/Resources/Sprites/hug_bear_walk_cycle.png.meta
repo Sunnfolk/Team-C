@@ -1,67 +1,55 @@
 fileFormatVersion: 2
-guid: d68c2bccb04ff4d42b7c041c9b5a0b69
+guid: f8a835ad07b21dc42846046b769c2fc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8303855392648720093
-    second: gnome_lick_0
+      213: -4958631773342881568
+    second: hug_bear_walk_cycle_0
   - first:
-      213: 2440288525704755522
-    second: gnome_lick_1
+      213: -3891798745774402801
+    second: hug_bear_walk_cycle_1
   - first:
-      213: 4388530451719821261
-    second: gnome_lick_2
+      213: 2029094461367561829
+    second: hug_bear_walk_cycle_2
   - first:
-      213: -8038492075975802885
-    second: gnome_lick_3
+      213: -224055632476908515
+    second: hug_bear_walk_cycle_3
   - first:
-      213: -1270681043373947099
-    second: gnome_lick_4
+      213: 4473093489157973756
+    second: hug_bear_walk_cycle_4
   - first:
-      213: 7616131338187763051
-    second: gnome_lick_5
+      213: -4472504431195267730
+    second: hug_bear_walk_cycle_5
   - first:
-      213: -8395174696295432422
-    second: gnome_lick_6
+      213: -707945605847712980
+    second: hug_bear_walk_cycle_6
   - first:
-      213: 8141874791165982756
-    second: gnome_lick_7
+      213: -6450251111407652418
+    second: hug_bear_walk_cycle_7
   - first:
-      213: 4359776158293792731
-    second: gnome_lick_8
+      213: 8457468811994031341
+    second: hug_bear_walk_cycle_8
   - first:
-      213: -4168523954617379890
-    second: gnome_lick_9
+      213: -2130511115183769376
+    second: hug_bear_walk_cycle_9
   - first:
-      213: -822575163387708037
-    second: gnome_lick_10
+      213: -245274953970851115
+    second: hug_bear_walk_cycle_10
   - first:
-      213: -8529218596480625731
-    second: gnome_lick_11
+      213: -6308544037392494871
+    second: hug_bear_walk_cycle_11
   - first:
-      213: 2082251893744383940
-    second: gnome_lick_12
+      213: -3823936363129667779
+    second: hug_bear_walk_cycle_12
   - first:
-      213: -1626822971586041801
-    second: gnome_lick_13
+      213: 8823027119525805632
+    second: hug_bear_walk_cycle_13
   - first:
-      213: 8827483713275565347
-    second: gnome_lick_14
+      213: -7473798009537715384
+    second: hug_bear_walk_cycle_14
   - first:
-      213: -8435451276484852488
-    second: gnome_lick_15
-  - first:
-      213: 4972290782889983518
-    second: gnome_lick_16
-  - first:
-      213: 6223188653979083189
-    second: gnome_lick_17
-  - first:
-      213: 7324674592931130368
-    second: gnome_lick_18
-  - first:
-      213: -1140253423538115411
-    second: gnome_lick_19
+      213: -8212925492823916337
+    second: hug_bear_walk_cycle_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gnome_lick_0
+      name: hug_bear_walk_cycle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 48
-        height: 48
+        y: 864
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32116fe1487c2cc80800000000000000
-      internalID: -8303855392648720093
+      spriteID: 0e8aee19ca66f2bb0800000000000000
+      internalID: -4958631773342881568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_1
+      name: hug_bear_walk_cycle_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
-        width: 48
-        height: 48
+        x: 288
+        y: 864
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249f7142c75add120800000000000000
-      internalID: 2440288525704755522
+      spriteID: f035ecc09ad8df9c0800000000000000
+      internalID: -3891798745774402801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_2
+      name: hug_bear_walk_cycle_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
-        width: 48
-        height: 48
+        x: 576
+        y: 864
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc79eb4c13137ec30800000000000000
-      internalID: 4388530451719821261
+      spriteID: 56ea68979aac82c10800000000000000
+      internalID: 2029094461367561829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_3
+      name: hug_bear_walk_cycle_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
-        width: 48
-        height: 48
+        x: 864
+        y: 864
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,41 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bff7ba1fb0a817090800000000000000
-      internalID: -8038492075975802885
+      spriteID: d14d940e69ef3ecf0800000000000000
+      internalID: -224055632476908515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5278fdac252ad5ee0800000000000000
-      internalID: -1270681043373947099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gnome_lick_5
+      name: hug_bear_walk_cycle_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 48
-        height: 48
+        y: 576
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6de66f991fe1b960800000000000000
-      internalID: 7616131338187763051
+      spriteID: cf6af5434de931e30800000000000000
+      internalID: 4473093489157973756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_6
+      name: hug_bear_walk_cycle_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
+        x: 288
+        y: 576
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f76ffd7195e7b80800000000000000
-      internalID: -8395174696295432422
+      spriteID: e6dde3a8ae87ee1c0800000000000000
+      internalID: -4472504431195267730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_7
+      name: hug_bear_walk_cycle_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 48
-        height: 48
+        x: 576
+        y: 576
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428f72d2cffbdf070800000000000000
-      internalID: 8141874791165982756
+      spriteID: c2bf52be83fdc26f0800000000000000
+      internalID: -707945605847712980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_8
+      name: hug_bear_walk_cycle_7
       rect:
         serializedVersion: 2
-        x: 144
-        y: 96
-        width: 48
-        height: 48
+        x: 864
+        y: 576
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,41 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd7915f1159018c30800000000000000
-      internalID: 4359776158293792731
+      spriteID: eb17a700aca1c76a0800000000000000
+      internalID: -6450251111407652418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_9
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec3135f8c8d6626c0800000000000000
-      internalID: -4168523954617379890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gnome_lick_10
+      name: hug_bear_walk_cycle_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 48
-        height: 48
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7d77314f30a594f0800000000000000
-      internalID: -822575163387708037
+      spriteID: de469dd2317fe5570800000000000000
+      internalID: 8457468811994031341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_11
+      name: hug_bear_walk_cycle_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 48
-        height: 48
+        x: 288
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db3dd1150e022a980800000000000000
-      internalID: -8529218596480625731
+      spriteID: 0e8337dbd67ee62e0800000000000000
+      internalID: -2130511115183769376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_12
+      name: hug_bear_walk_cycle_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
+        x: 576
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c7b48ba015a5ec10800000000000000
-      internalID: 2082251893744383940
+      spriteID: 5d264489abb989cf0800000000000000
+      internalID: -245274953970851115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_13
+      name: hug_bear_walk_cycle_11
       rect:
         serializedVersion: 2
-        x: 144
-        y: 48
-        width: 48
-        height: 48
+        x: 864
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,41 +384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7382b2a602d5c69e0800000000000000
-      internalID: -1626822971586041801
+      spriteID: 9eecf414f9c8378a0800000000000000
+      internalID: -6308544037392494871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 325165ecaa5818a70800000000000000
-      internalID: 8827483713275565347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gnome_lick_15
+      name: hug_bear_walk_cycle_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f44109c1c14fea80800000000000000
-      internalID: -8435451276484852488
+      spriteID: d3ff4f74326aeeac0800000000000000
+      internalID: -3823936363129667779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_16
+      name: hug_bear_walk_cycle_13
       rect:
         serializedVersion: 2
-        x: 48
+        x: 288
         y: 0
-        width: 48
-        height: 48
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1e3b1a6f10210540800000000000000
-      internalID: 4972290782889983518
+      spriteID: 04e39f63b60b17a70800000000000000
+      internalID: 8823027119525805632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_17
+      name: hug_bear_walk_cycle_14
       rect:
         serializedVersion: 2
-        x: 96
+        x: 576
         y: 0
-        width: 48
-        height: 48
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,20 +447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b12aa2eb153d5650800000000000000
-      internalID: 6223188653979083189
+      spriteID: 843ab76ee4cb74890800000000000000
+      internalID: -7473798009537715384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gnome_lick_18
+      name: hug_bear_walk_cycle_15
       rect:
         serializedVersion: 2
-        x: 144
+        x: 864
         y: 0
-        width: 48
-        height: 48
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,29 +468,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00c2df60cb876a560800000000000000
-      internalID: 7324674592931130368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gnome_lick_19
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dac66187d810d20f0800000000000000
-      internalID: -1140253423538115411
+      spriteID: fc00b7937c3d50e80800000000000000
+      internalID: -8212925492823916337
       vertices: []
       indices: 
       edges: []

@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool CheckGroundCollision()
     {
-        return _Collision.IsGrounded(transform.position + new Vector3(-0.4f, 0f, 0f), 1.2f) ||
-               (_Collision.IsGrounded(transform.position + new Vector3(0.4f, 0f, 0f), 1.2f));
+        return _Collision.IsGrounded(transform.position + new Vector3(-0.25f, 0f, 0f), 1.1f) ||
+               (_Collision.IsGrounded(transform.position + new Vector3(0.25f, 0f, 0f), 1.1f));
     }
 }

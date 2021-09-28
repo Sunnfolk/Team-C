@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3352943048219236981}
   - component: {fileID: 3352943048219236982}
   - component: {fileID: 3352943048219236983}
+  - component: {fileID: 1273431408278394193}
   m_Layer: 0
   m_Name: Timmy
   m_TagString: Untagged
@@ -184,7 +185,7 @@ MonoBehaviour:
   maxVelocity: 24
   isJumping: 0
   jumpTime: 0.3
-  coyoteTime: 0.15
+  coyoteTime: 0.1
   canCoyote: 0
   fallDistance: 0
 --- !u!114 &3352943048219236983
@@ -199,3 +200,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29afc895facd3b40a61d55ea9ba5502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1273431408278394193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352943048219236936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ee3716c0acf274e8ec66ed3a37d642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaker: {fileID: 0}
+  duration: 0.25
+  strength: 0.09

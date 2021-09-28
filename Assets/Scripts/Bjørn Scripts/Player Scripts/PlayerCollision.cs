@@ -15,7 +15,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("Door"))
         {
-            
+            SceneController.LoadScene(other.gameObject.GetComponent<DoorTargetedScene>().sceneName);
         }
     }
 }

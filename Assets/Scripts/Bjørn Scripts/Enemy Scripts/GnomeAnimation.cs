@@ -25,7 +25,6 @@ public class GnomeAnimation : MonoBehaviour
 
         if (_Timer > 0)
         {
-            print("--");
             _Timer -= Time.deltaTime;
         }
 
@@ -38,7 +37,6 @@ public class GnomeAnimation : MonoBehaviour
         switch (_CurrentAnimation)
         {
             case "opening":
-                print("open");
                 _Animator.Play("GnomeOpeningMouth");
                 break;
             case "open":
@@ -53,7 +51,7 @@ public class GnomeAnimation : MonoBehaviour
         }
 
         var dir = _Gnome.goingRight ? 1f : -1f;
-        transform.localScale = new Vector2( dir * 3f, 3f);
+        transform.localScale = new Vector2( dir, 1f);
     }
 
     private void ChangeAnimation(string str)

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e5b0156ea673e044aad40ccc2c11896b
+guid: 0160eee009db0264c8dd3aa8613e0e90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2285602611459129663
-    second: Drop_spider_attack_0
+      213: -447144262254210824
+    second: gnome_spark_0
   - first:
-      213: -2678374530087078236
-    second: Drop_spider_attack_1
+      213: -5467593714305362947
+    second: gnome_spark_1
   - first:
-      213: 5593058356813386317
-    second: Drop_spider_attack_2
+      213: -3103777929869808973
+    second: gnome_spark_2
   - first:
-      213: -6882359256290461758
-    second: Drop_spider_attack_3
+      213: -6277690469338338422
+    second: gnome_spark_3
   - first:
-      213: -5781642038535109252
-    second: Drop_spider_attack_4
+      213: -47069574576378584
+    second: gnome_spark_4
   - first:
-      213: -6250130913066288152
-    second: Drop_spider_attack_5
+      213: 1250151574937485539
+    second: gnome_spark_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Drop_spider_attack_0
+      name: gnome_spark_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cef546d888e740e0800000000000000
-      internalID: -2285602611459129663
+      spriteID: 8f0dbfc99ac6bc9f0800000000000000
+      internalID: -447144262254210824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop_spider_attack_1
+      name: gnome_spark_1
       rect:
         serializedVersion: 2
         x: 48
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a6b4b63e8084dad0800000000000000
-      internalID: -2678374530087078236
+      spriteID: df39ba24c743f14b0800000000000000
+      internalID: -5467593714305362947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop_spider_attack_2
+      name: gnome_spark_2
       rect:
         serializedVersion: 2
         x: 96
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4254e531f88e9d40800000000000000
-      internalID: 5593058356813386317
+      spriteID: 3baa964da6a2de4d0800000000000000
+      internalID: -3103777929869808973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop_spider_attack_3
+      name: gnome_spark_3
       rect:
         serializedVersion: 2
         x: 144
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c77f2088b2fc70a0800000000000000
-      internalID: -6882359256290461758
+      spriteID: a8bab3d57c921e8a0800000000000000
+      internalID: -6277690469338338422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop_spider_attack_4
+      name: gnome_spark_4
       rect:
         serializedVersion: 2
         x: 192
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7546aac23b73cfa0800000000000000
-      internalID: -5781642038535109252
+      spriteID: 82d65a7a876c85ff0800000000000000
+      internalID: -47069574576378584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop_spider_attack_5
+      name: gnome_spark_5
       rect:
         serializedVersion: 2
         x: 240
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebfef69c031349a0800000000000000
-      internalID: -6250130913066288152
+      spriteID: 3e04b8bdb3e695110800000000000000
+      internalID: 1250151574937485539
       vertices: []
       indices: 
       edges: []
