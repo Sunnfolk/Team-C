@@ -19,9 +19,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bjørn Scripts/Enemy Scripts/GnomeMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bjørn Scripts/Enemy Scripts/GnomeAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bjørn Scripts/ShakerTester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scripts/Enemy Scripts/SpiderMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yiOE0izJuezcDV8EsdzY264bBP" />
   <component name="ProjectLevelVcsManager">
@@ -73,7 +71,7 @@
       <workItem from="1632730840446" duration="1005000" />
       <workItem from="1632732058519" duration="5373000" />
       <workItem from="1632741711302" duration="3277000" />
-      <workItem from="1632814910513" duration="3375000" />
+      <workItem from="1632814910513" duration="3970000" />
     </task>
     <servers />
   </component>
