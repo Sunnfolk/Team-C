@@ -27,7 +27,7 @@ public class PlayerAnimation : MonoBehaviour
             }
             else if (_Rigidbody.velocity.y < 0)
             {
-                _Animator.Play("TimmyJump");
+                _Animator.Play("TimmyFall");
             }
         }
         else if (_Input.moveVector.x != 0)
