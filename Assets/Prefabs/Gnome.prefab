@@ -319,16 +319,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 450f3be147d54e64491506b35b8a8631, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 2
-  MaxDistance: 20
+  MaxDistance: 13
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -338,35 +338,44 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.36326346
-      value: 0.36200714
-      inSlope: 0.027799102
-      outSlope: 0.027799102
+      time: 0.75341547
+      value: 0.34947968
+      inSlope: -0.86126417
+      outSlope: -0.86126417
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.4891589
+      outWeight: 1
     - serializedVersion: 3
-      time: 0.6766154
-      value: 0.16635132
-      inSlope: -1.6864957
-      outSlope: -1.6864957
+      time: 0.8158061
+      value: 0.14631653
+      inSlope: -4.3146744
+      outSlope: -4.3146744
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.22104608
-      outWeight: 0.22650822
+      inWeight: 0.52454865
+      outWeight: 0.4378033
     - serializedVersion: 3
-      time: 0.79813284
-      value: 0.033955365
-      inSlope: -0.677886
-      outSlope: -0.677886
+      time: 0.860109
+      value: 0.04156266
+      inSlope: 0.018164326
+      outSlope: 0.018164326
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.47602156
-      outWeight: 0.8299847
+      inWeight: 0.45195258
+      outWeight: 0.8298579
     - serializedVersion: 3
-      time: 0.940155
-      value: 0.0036621094
+      time: 0.91467947
+      value: 0
+      inSlope: -0.17091875
+      outSlope: -0.17091875
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.29043993
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.99334717
+      value: 0
       inSlope: 0.1803957
       outSlope: 0.1803957
       tangentMode: 0
