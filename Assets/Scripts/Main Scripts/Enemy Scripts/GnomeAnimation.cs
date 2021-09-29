@@ -51,7 +51,7 @@ public class GnomeAnimation : MonoBehaviour
         }
 
         var dir = _Gnome.goingRight ? 1f : -1f;
-        transform.localScale = new Vector2( dir, 1f);
+        transform.localScale = new Vector2( dir * 2f, 2f);
     }
 
     private void ChangeAnimation(string str)

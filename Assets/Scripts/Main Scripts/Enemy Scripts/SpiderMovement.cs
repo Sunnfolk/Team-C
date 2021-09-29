@@ -3,16 +3,21 @@ using UnityEngine;
 public class SpiderMovement : MonoBehaviour
 {
     private float Timer;
-    private bool HitGround = false;
+    private bool HitGround;
     private Rigidbody2D m_Rigidbody2D;
-    public float UpTimerCount;
-    public float DownTimerCount;
     public string action = "idle";
+    
+    public float UpTimerCount;
+    public float TimerStartAt;
+    public float DownTimerCount;
+
+    private Collision _Collision;
 
     private void Start()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        Timer = DownTimerCount;
+        _Collision = GetComponent<Collision>();
+        Timer = TimerStartAt;
         m_Rigidbody2D.gravityScale = 0;
     }
     
@@ -22,34 +27,39 @@ public class SpiderMovement : MonoBehaviour
         {
             Timer -= Time.deltaTime;
         }
-        else if (Timer <= 0 && HitGround == false)
+        else if (Timer <= 0 && !HitGround)
         {
             m_Rigidbody2D.gravityScale = 2.2f;
             action = "down";
         }
-        else if (Timer <= 0 && HitGround == true)
+        else if (Timer <= 0 && HitGround)
         {
             transform.Translate(Vector2.up * Time.deltaTime * 2.8f);
             action = "up";
         }
 
-  
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.transform.CompareTag("Ground"))
+        if (Timer <= 0)
         {
-            m_Rigidbody2D.gravityScale = 0;
-            HitGround = true;
-            Timer = UpTimerCount;
-            action = "attack";
-        }
-        else if (other.transform.CompareTag("Top"))
-        {
-            HitGround = false;
-            Timer = DownTimerCount;
-            action = "idle";
+            if (action == "down")
+            {
+                if (_Collision.IsGrounded(transform.position, 1f))
+                {
+                    m_Rigidbody2D.gravityScale = 0;
+                    HitGround = true;
+                    Timer = UpTimerCount;
+                    action = "attack";
+                }
+            }
+            
+            else if (action == "up")
+            {
+                if (_Collision.IsGrounded(transform.position, -1f))
+                {
+                    HitGround = false;
+                    Timer = DownTimerCount;
+                    action = "idle";
+                }
+            }
         }
     }
 }

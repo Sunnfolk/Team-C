@@ -32,7 +32,7 @@ public class GnomeMovement : MonoBehaviour
         var pos = transform.position + vec;
         
         //Debug.DrawRay(pos, Vector2.down, new Color(1f, 0f, 1f));
-        var hit = Physics2D.Raycast(pos, Vector2.down, 1f, whatIsGround);
+        var hit = Physics2D.Raycast(pos, Vector2.down, 1.5f, whatIsGround);
 
         return hit.collider != null;
     }

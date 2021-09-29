@@ -131,9 +131,9 @@ public class PlayerMovement : MonoBehaviour
         else fallDistance = 0;
     }
 
-    private bool CheckGroundCollision()
+    public bool CheckGroundCollision()
     {
-        return _Collision.IsGrounded(transform.position + new Vector3(-0.25f, 0f, 0f), 1.1f) ||
-               (_Collision.IsGrounded(transform.position + new Vector3(0.25f, 0f, 0f), 1.1f));
+        return _Collision.IsGrounded(transform.position + new Vector3(-0.2f, 0f, 0f), 1.1f) ||
+               (_Collision.IsGrounded(transform.position + new Vector3(0.2f, 0f, 0f), 1.1f));
     }
 }
