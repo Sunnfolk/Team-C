@@ -135,5 +135,5 @@ public class PlayerMovement : MonoBehaviour
     {
         return _Collision.IsGrounded(transform.position + new Vector3(-0.2f, 0f, 0f), 1.1f) ||
                (_Collision.IsGrounded(transform.position + new Vector3(0.2f, 0f, 0f), 1.1f));
-    }
+    }   
 }
