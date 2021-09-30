@@ -4,6 +4,7 @@ using Random = UnityEngine.Random;
 public class TimmyAudio : MonoBehaviour
 {
     public AudioClip jump;
+    public AudioClip walk;
 
     private AudioSource _AudioSource;
     private PlayerInput _Input;
@@ -23,11 +24,18 @@ public class TimmyAudio : MonoBehaviour
 
     private void JumpAudio()
     {
-        if (_Input.jump && _Movement.canCoyote)
+        if (_Input.jump && _Movement.canCoyote && !_Movement.isDead)
         {
             _AudioSource.pitch = Random.Range(0.95f, 1.1f);
             _AudioSource.volume = 0.3f;
             _AudioSource.PlayOneShot(jump);
         }
+    }
+
+    public void WalkAudio()
+    {
+        _AudioSource.pitch = Random.Range(0.95f, 1.05f);
+        _AudioSource.volume = 1f;
+        _AudioSource.PlayOneShot(walk);
     }
 }
