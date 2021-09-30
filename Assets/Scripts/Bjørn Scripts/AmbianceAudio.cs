@@ -37,6 +37,9 @@ public class AmbianceAudio : MonoBehaviour
 
     private void PlayAmbiance(int num)
     {
+        if (num == 0) _Source.volume = 0.3f;
+        else if (num == 1) _Source.volume = 0.5f;
+        else _Source.volume = 0.5f;
         _Source.PlayOneShot(ambiance[num]);
     }
 }
