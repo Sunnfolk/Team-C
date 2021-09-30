@@ -293,6 +293,7 @@ MonoBehaviour:
   - {fileID: 468388615}
   - {fileID: 93896725}
   moveSpeed: 1
+  goingRight: 0
 --- !u!114 &483508663
 MonoBehaviour:
   m_ObjectHideFlags: 0
