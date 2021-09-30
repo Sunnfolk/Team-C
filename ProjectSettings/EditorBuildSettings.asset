@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/Bj\xF8rn Scenes/Test Scene.unity"
-    guid: 08a133cf3f3272c4fa2965e0701c31fe
+    path: Assets/Scenes/Main Scenes/MainScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: "Assets/Scenes/Bj\xF8rn Scenes/Next Scene 2.unity"
-    guid: aaa22955bc9fb7a46b9ac27bb5e72470
+    path: Assets/Scenes/Main Scenes/timmyRoom.unity
+    guid: c232adb05c4b3aa4a9ff953d3a33a047
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/level2.unity
+    guid: 1b3b3037dded5a041962cd06cb829979
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/level3.unity
+    guid: 2a7a36b6408eb6148ab3b54d21c47aa5
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/motherRoom.unity
+    guid: 52e3989e95bbfb049881a1742071d6bf
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/endScene.unity
+    guid: 43a5f0ec3892c0d458e033fec9f92538
   m_configObjects: {}
