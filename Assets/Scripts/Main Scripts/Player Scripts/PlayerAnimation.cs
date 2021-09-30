@@ -66,4 +66,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         _Audio.WalkAudio();
     }
+
+    private void PlayDeathSound()
+    {
+        _Audio.DeathAudio();
+    }
 }

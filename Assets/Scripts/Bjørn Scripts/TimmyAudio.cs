@@ -5,6 +5,7 @@ public class TimmyAudio : MonoBehaviour
 {
     public AudioClip jump;
     public AudioClip walk;
+    public AudioClip death;
 
     private AudioSource _AudioSource;
     private PlayerInput _Input;
@@ -37,5 +38,12 @@ public class TimmyAudio : MonoBehaviour
         _AudioSource.pitch = Random.Range(0.95f, 1.05f);
         _AudioSource.volume = 1f;
         _AudioSource.PlayOneShot(walk);
+    }
+
+    public void DeathAudio()
+    {
+        _AudioSource.pitch = 1f;
+        _AudioSource.volume = 1f;
+        _AudioSource.PlayOneShot(death);
     }
 }

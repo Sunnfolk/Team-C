@@ -4,11 +4,13 @@ public class PlayerCollision : MonoBehaviour
 {
     private PlayerAnimation _Animation;
     private PlayerMovement _Movement;
+    private TimmyAudio _Audio;
 
     private void Start()
     {
         _Animation = GetComponent<PlayerAnimation>();
         _Movement = GetComponent<PlayerMovement>();
+        _Audio = GetComponent<TimmyAudio>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -17,6 +19,7 @@ public class PlayerCollision : MonoBehaviour
         {
             _Movement.isDead = true;
             _Animation.PlayDeathAnimation();
+            _Audio.DeathAudio();
         }
     }
 
