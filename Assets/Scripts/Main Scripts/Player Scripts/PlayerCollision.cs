@@ -32,6 +32,11 @@ public class PlayerCollision : MonoBehaviour
             _Movement.diedByPit = true;
             _Movement.isDead = true;
         }
+
+        if (other.CompareTag("Mom"))
+        {
+            SceneController.LoadScene("endScene");
+        }
     }
 
     private void ResetScene()
