@@ -11,7 +11,7 @@ public class CameraMoveVertical : MonoBehaviour
     [SerializeField] private float _MoveSpeed = 0.6f;
     
     /* Cinemachine */
-    [SerializeField] private CinemachineCore _Transposer;
+
 
     private void Start()
     {
@@ -20,6 +20,7 @@ public class CameraMoveVertical : MonoBehaviour
 
     private void Update()
     {
+        
         if (_Input.moveVector.y > 0)
         {
             _Timer -= Time.deltaTime;
