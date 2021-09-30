@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private bool isDead = false;
-    
-    
+    [HideInInspector] public bool isDead;
+    [HideInInspector] public bool diedByPit;
+    private float diedByPitTimer;
+    private float diedByPitMaxTimer = 2f;
+
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float maxVelocity = 24f;
@@ -29,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        isDead = false;
+        diedByPitTimer = diedByPitMaxTimer;
+        
         _Input = GetComponent<PlayerInput>();
         _Rigidbody2D = GetComponent<Rigidbody2D>();
         _Collision = GetComponent<Collision>();
@@ -47,9 +52,19 @@ public class PlayerMovement : MonoBehaviour
 
             DistanceFallen();
         }
-        else
+        else if (diedByPit)
         {
-            //TODO Death Animation and Reset Scene
+            _Rigidbody2D.gravityScale = 0;
+
+            if (diedByPitTimer > 0)
+            {
+                _Rigidbody2D.velocity = new Vector3(0f, Time.deltaTime * -600f, 0f);
+                diedByPitTimer -= Time.deltaTime;
+            }
+            else
+            {
+                SceneController.ResetScene();
+            }
         }
     }
 
@@ -76,7 +91,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _Rigidbody2D.velocity = new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
+        if (!isDead) _Rigidbody2D.velocity = new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
+        else _Rigidbody2D.velocity = new Vector2(0f, _Rigidbody2D.velocity.y);
     }
 
     private void Jump()

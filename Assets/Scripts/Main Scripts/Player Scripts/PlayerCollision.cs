@@ -2,12 +2,21 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    private PlayerAnimation _Animation;
+    private PlayerMovement _Movement;
+
+    private void Start()
+    {
+        _Animation = GetComponent<PlayerAnimation>();
+        _Movement = GetComponent<PlayerMovement>();
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            SceneController.ResetScene();
+            _Movement.isDead = true;
+            _Animation.PlayDeathAnimation();
         }
     }
 
@@ -17,5 +26,16 @@ public class PlayerCollision : MonoBehaviour
         {
             SceneController.LoadScene(other.gameObject.GetComponent<DoorTargetedScene>().sceneName);
         }
+
+        if (other.CompareTag("Monsterpit"))
+        {
+            _Movement.diedByPit = true;
+            _Movement.isDead = true;
+        }
+    }
+
+    private void ResetScene()
+    {
+        SceneController.ResetScene();
     }
 }
