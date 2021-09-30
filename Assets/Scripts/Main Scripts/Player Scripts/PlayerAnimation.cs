@@ -19,29 +19,37 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!_Movement.canCoyote)
+        if (!_Movement.isDead)
         {
-            if (_Rigidbody.velocity.y > 0)
+            if (!_Movement.canCoyote)
             {
-                _Animator.Play("TimmyJump");
+                if (_Rigidbody.velocity.y > 0)
+                {
+                    _Animator.Play("TimmyJump");
+                }
+                else if (_Rigidbody.velocity.y < 0)
+                {
+                    _Animator.Play("TimmyFall");
+                }
             }
-            else if (_Rigidbody.velocity.y < 0)
+            else if (_Input.moveVector.x != 0)
             {
-                _Animator.Play("TimmyFall");
+                _Animator.Play("TimmyWalk");
             }
-        }
-        else if (_Input.moveVector.x != 0)
-        {
-            _Animator.Play("TimmyWalk");
-        }
-        else
-        {
-            _Animator.Play("TimmyIdle");
-        }
+            else
+            {
+                _Animator.Play("TimmyIdle");
+            }
 
-        if (_Input.moveVector.x != 0)
-        {
-            transform.localScale = new Vector2(_Input.moveVector.x * 2f, 2f);
+            if (_Input.moveVector.x != 0)
+            {
+                transform.localScale = new Vector2(_Input.moveVector.x * 2f, 2f);
+            }
         }
+    }
+
+    public void PlayDeathAnimation()
+    {
+        _Animator.Play("TimmyDeath");
     }
 }
