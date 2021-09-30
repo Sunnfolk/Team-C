@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Wooden_Table_Tiles_1
+  m_Name: timmy_room_10
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3332057872292438262, guid: b7caf5f747bff8e4b8819e5822cbb29b, type: 3}
+  m_Sprite: {fileID: 8364476181682535754, guid: 536e8f85ee6cb2f47b4d9020c632b3e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
