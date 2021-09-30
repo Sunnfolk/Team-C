@@ -41,7 +41,7 @@ public class GnomeMovement : MonoBehaviour
     private bool Wall()
     {
         var vec = goingRight ? Vector2.right : Vector2.left;
-        var pos = transform.position;
+        var pos = transform.position - new Vector3(0f,0.5f,0f);
         
         //Debug.DrawRay(pos, vec, new Color(1f, 0f, 1f));
         var hit = Physics2D.Raycast(pos, vec, 0.5f, whatIsGround);
