@@ -26,7 +26,7 @@ public class TimmyAudio : MonoBehaviour
         if (_Input.jump && _Movement.canCoyote)
         {
             _AudioSource.pitch = Random.Range(0.95f, 1.1f);
-            _AudioSource.volume = 0.4f;
+            _AudioSource.volume = 0.3f;
             _AudioSource.PlayOneShot(jump);
         }
     }

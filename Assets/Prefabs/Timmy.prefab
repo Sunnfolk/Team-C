@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 1273431408278394193}
   - component: {fileID: 971705349}
   - component: {fileID: -8614341637303421718}
-  - component: {fileID: 7684756896514037138}
   m_Layer: 0
   m_Name: Timmy
   m_TagString: Untagged
@@ -171,6 +170,7 @@ MonoBehaviour:
   jump: 0
   longJump: 0
   playMusic: 1
+  pause: 0
 --- !u!114 &3352943048219236982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,19 +249,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f13411466af0fec4c802f0ee48436a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7684756896514037138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352943048219236936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db0143a19493544cb4bad1b4bc8acff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxOffset: 2
-  _TimeBeforeCameraMove: 0.5
-  _MoveSpeed: 0.6
-  vcam: {fileID: 0}
