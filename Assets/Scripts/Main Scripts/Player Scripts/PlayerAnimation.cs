@@ -6,6 +6,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMovement _Movement;
     private PlayerInput _Input;
     private Rigidbody2D _Rigidbody;
+    private TimmyAudio _Audio;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,9 @@ public class PlayerAnimation : MonoBehaviour
         _Movement = GetComponent<PlayerMovement>();
         _Input = GetComponent<PlayerInput>();
         _Rigidbody = GetComponent<Rigidbody2D>();
+        _Audio = GetComponent<TimmyAudio>();
+        
+        _Animator.Play("TimmyRespawn");
     }
 
     // Update is called once per frame
@@ -51,5 +55,15 @@ public class PlayerAnimation : MonoBehaviour
     public void PlayDeathAnimation()
     {
         _Animator.Play("TimmyDeath");
+    }
+
+    private void CanMoveAgain()
+    {
+        _Movement.isDead = false;
+    }
+
+    private void PlayWalkSound()
+    {
+        _Audio.WalkAudio();
     }
 }

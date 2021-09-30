@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [HideInInspector] public bool isDead;
+    [HideInInspector] public bool isDead = true;
     [HideInInspector] public bool diedByPit;
     private float diedByPitTimer;
     private float diedByPitMaxTimer = 2f;
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        isDead = false;
+        isDead = true;
         diedByPitTimer = diedByPitMaxTimer;
         
         _Input = GetComponent<PlayerInput>();
