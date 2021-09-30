@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public bool jump;
     [HideInInspector] public bool longJump;
     [HideInInspector] public bool playMusic = true;
+    [HideInInspector] public bool pause;
 
     private void Update()
     {
@@ -20,5 +21,6 @@ public class PlayerInput : MonoBehaviour
             playMusic = !playMusic;
             print(playMusic);
         }
+        
     }
 }
