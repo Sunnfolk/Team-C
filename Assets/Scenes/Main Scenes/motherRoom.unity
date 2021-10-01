@@ -262,7 +262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6655076923819774317, guid: eac9420ff58696141a7b8d30b0705238, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.33244
+      value: 6.336388
       objectReference: {fileID: 0}
     - target: {fileID: 6655076923819774317, guid: eac9420ff58696141a7b8d30b0705238, type: 3}
       propertyPath: m_LocalPosition.y
@@ -302,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6655076924799248646, guid: eac9420ff58696141a7b8d30b0705238, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.51244
+      value: -2.5163882
       objectReference: {fileID: 0}
     - target: {fileID: 6655076924799248646, guid: eac9420ff58696141a7b8d30b0705238, type: 3}
       propertyPath: m_LocalPosition.y
@@ -335,6 +335,31 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 803010052}
   m_Damping: 0.5
   m_MaxWindowSize: -1
+--- !u!1 &846263751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6655076923819774312, guid: eac9420ff58696141a7b8d30b0705238, type: 3}
+  m_PrefabInstance: {fileID: 846263748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &846263752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846263751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 48
+  m_RefResolutionX: 400
+  m_RefResolutionY: 300
+  m_UpscaleRT: 0
+  m_PixelSnapping: 1
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1001 &922612770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9765,6 +9790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jump: {fileID: 8300000, guid: d9143226bec49474884ed2f97f4bb478, type: 3}
   walk: {fileID: 8300000, guid: 23ae9cd94c520f04daa9bd9516500197, type: 3}
+  death: {fileID: 0}
 --- !u!82 &1107936547
 AudioSource:
   m_ObjectHideFlags: 0
