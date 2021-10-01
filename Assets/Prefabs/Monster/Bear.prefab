@@ -382,6 +382,7 @@ MonoBehaviour:
   - {x: 1.97, y: -1.9}
   - {x: 1.9, y: -2.5}
   - {x: 1.8, y: -2.5}
+  shaker: {fileID: 0}
 --- !u!114 &72814568
 MonoBehaviour:
   m_ObjectHideFlags: 0
