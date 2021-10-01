@@ -5,6 +5,7 @@ public class BearAnimation : MonoBehaviour
     private BearMovement _Bear;
     private Animator _Animator;
     public Vector2[] armColliderPositions;
+    public CameraShaker shaker;
 
     private void Start()
     {
@@ -56,5 +57,10 @@ public class BearAnimation : MonoBehaviour
         _Bear.walking = true;
         _Bear.attacking = false;
         _Animator.Play("BearWalk");
+    }
+    
+    private void ShakeScreen()
+    {
+        shaker.Shake(0.35f, 0.25f);
     }
 }
