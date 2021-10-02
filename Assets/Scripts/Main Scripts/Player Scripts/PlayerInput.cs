@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -16,6 +17,16 @@ public class PlayerInput : MonoBehaviour
 
         jump = Keyboard.current.spaceKey.wasPressedThisFrame;
         longJump = Keyboard.current.spaceKey.isPressed;
+
+        if (Keyboard.current.rKey.wasPressedThisFrame)
+        {
+            SceneController.ResetScene();
+        }
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            SceneController.LoadScene("MainMenuVideo");
+        }
         if (Keyboard.current.mKey.wasPressedThisFrame)
         {
             playMusic = !playMusic;

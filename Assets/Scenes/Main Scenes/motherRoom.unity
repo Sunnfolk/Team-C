@@ -5436,6 +5436,10 @@ PrefabInstance:
       value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 7432338636460718587, guid: 9cb16f60d18f224499bf7d385fd697af, type: 3}
+      propertyPath: m_GeometryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432338636460718587, guid: 9cb16f60d18f224499bf7d385fd697af, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 2
       objectReference: {fileID: 0}

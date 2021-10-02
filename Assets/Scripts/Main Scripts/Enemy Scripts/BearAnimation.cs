@@ -4,6 +4,7 @@ public class BearAnimation : MonoBehaviour
 {
     private BearMovement _Bear;
     private Animator _Animator;
+    private BearAudio _Audio;
     public Vector2[] armColliderPositions;
     public CameraShaker shaker;
 
@@ -11,6 +12,7 @@ public class BearAnimation : MonoBehaviour
     {
         _Bear = GetComponent<BearMovement>();
         _Animator = GetComponent<Animator>();
+        _Audio = GetComponent<BearAudio>();
     }
 
     private void Update()
@@ -59,8 +61,9 @@ public class BearAnimation : MonoBehaviour
         _Animator.Play("BearWalk");
     }
     
-    private void ShakeScreen()
+    private void SlamEffects()
     {
-        shaker.Shake(0.35f, 0.25f);
+        shaker.Shake(0.4f, 0.2f);
+        _Audio.SlamAudio();
     }
 }
