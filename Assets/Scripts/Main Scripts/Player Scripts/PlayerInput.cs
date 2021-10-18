@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerInput : MonoBehaviour
 {
     [HideInInspector] public Vector2 moveVector;
     [HideInInspector] public bool jump;
     [HideInInspector] public bool longJump;
-    [HideInInspector] public bool playMusic = true;
     [HideInInspector] public bool pause;
 
     private void Update()
@@ -25,13 +23,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            SceneController.LoadScene("MainMenuVideo");
+            pause = !pause;
         }
-        if (Keyboard.current.mKey.wasPressedThisFrame)
-        {
-            playMusic = !playMusic;
-            print(playMusic);
-        }
-        
     }
 }

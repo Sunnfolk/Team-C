@@ -7,6 +7,7 @@ public class BearAnimation : MonoBehaviour
     private BearAudio _Audio;
     public Vector2[] armColliderPositions;
     public CameraShaker shaker;
+    public bool doSlamEffects = true;
 
     private void Start()
     {
@@ -63,7 +64,10 @@ public class BearAnimation : MonoBehaviour
     
     private void SlamEffects()
     {
-        shaker.Shake(0.4f, 0.2f);
-        _Audio.SlamAudio();
+        if (doSlamEffects)
+        {
+            shaker.Shake(0.4f, 0.2f);
+            _Audio.SlamAudio();
+        }
     }
 }

@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 public class AmbianceAudio : MonoBehaviour
 {
     public AudioClip[] ambiance;
-    
+
     private AudioSource _Source;
 
     public float ambianceMaxChance = 15f;

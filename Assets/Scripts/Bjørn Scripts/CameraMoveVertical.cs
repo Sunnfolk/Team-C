@@ -1,4 +1,3 @@
-using Cinemachine;
 using UnityEngine;
 
 public class CameraMoveVertical : MonoBehaviour
@@ -9,9 +8,6 @@ public class CameraMoveVertical : MonoBehaviour
     private float _Timer;
     [SerializeField] private float _TimeBeforeCameraMove = 0.5f;
     [SerializeField] private float _MoveSpeed = 0.6f;
-    
-    /* Cinemachine */
-
 
     private void Start()
     {
