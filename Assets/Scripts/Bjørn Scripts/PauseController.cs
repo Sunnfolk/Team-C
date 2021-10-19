@@ -18,8 +18,10 @@ public class PauseController : MonoBehaviour
             _Movement.canMove = false;
             justPaused = true;
         }
-        else if (justPaused)
+        else if (!_Input.pause)
         {
+            if (!justPaused) return;
+            
             Time.timeScale = 1f;
             AudioListener.pause = false;
             _Movement.canMove = true;
