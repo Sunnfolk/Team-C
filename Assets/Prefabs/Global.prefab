@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963240300288142531}
   - component: {fileID: 963240300288142532}
+  - component: {fileID: 5611739060852942435}
   m_Layer: 0
   m_Name: Global
   m_TagString: Untagged
@@ -46,3 +47,16 @@ MonoBehaviour:
   _Input: {fileID: 0}
   _PauseCanvas: {fileID: 0}
   _OptionsCanvas: {fileID: 0}
+--- !u!114 &5611739060852942435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963240300288142530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd86c7b68ae851745841ffe6cff2a2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Input: {fileID: 0}

@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [HideInInspector] public bool isDead = true;
+    [HideInInspector] public bool isDead;
+    [HideInInspector] public bool canMove = true;
     [HideInInspector] public bool diedByPit;
     private float diedByPitTimer;
     private float diedByPitMaxTimer = 2f;
@@ -31,8 +32,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        isDead = true;
+        isDead = false;
         diedByPitTimer = diedByPitMaxTimer;
+        canMove = false;
         
         _Input = GetComponent<PlayerInput>();
         _Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -41,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (!isDead)
+        print(canMove);
+        if (canMove && !isDead)
         {
             LongJump();
             Coyote();
@@ -52,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
             DistanceFallen();
         }
-        else if (diedByPit)
+        else if (isDead & diedByPit)
         {
             _Rigidbody2D.gravityScale = 0;
 
@@ -91,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isDead) _Rigidbody2D.velocity = new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
+        if (canMove && !isDead) _Rigidbody2D.velocity = new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
         else _Rigidbody2D.velocity = new Vector2(0f, _Rigidbody2D.velocity.y);
     }
 

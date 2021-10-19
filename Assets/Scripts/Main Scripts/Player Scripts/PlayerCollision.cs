@@ -18,6 +18,7 @@ public class PlayerCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             _Movement.isDead = true;
+            _Movement.canMove = false;
             _Animation.PlayDeathAnimation();
             _Audio.DeathAudio();
         }
@@ -34,6 +35,7 @@ public class PlayerCollision : MonoBehaviour
         {
             _Movement.diedByPit = true;
             _Movement.isDead = true;
+            _Movement.canMove = false;
         }
 
         if (other.CompareTag("Mom"))

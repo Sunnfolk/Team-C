@@ -23,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!_Movement.isDead)
+        if (_Movement.canMove && !_Movement.isDead)
         {
             if (!_Movement.canCoyote)
             {
@@ -59,7 +59,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void CanMoveAgain()
     {
-        _Movement.isDead = false;
+        _Movement.canMove = true;
     }
 
     private void PlayWalkSound()
