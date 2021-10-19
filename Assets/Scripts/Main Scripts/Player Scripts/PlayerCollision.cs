@@ -5,6 +5,7 @@ public class PlayerCollision : MonoBehaviour
     private PlayerAnimation _Animation;
     private PlayerMovement _Movement;
     private TimmyAudio _Audio;
+    [SerializeField] private CameraShaker shaker;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerCollision : MonoBehaviour
         {
             _Movement.isDead = true;
             _Movement.canMove = false;
+            shaker.Shake(0.6f, 0.15f);
             _Animation.PlayDeathAnimation();
             _Audio.DeathAudio();
         }

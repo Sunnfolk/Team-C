@@ -6,7 +6,7 @@ public class BearAnimation : MonoBehaviour
     private Animator _Animator;
     private BearAudio _Audio;
     public Vector2[] armColliderPositions;
-    public CameraShaker shaker;
+    [SerializeField] private CameraShaker shaker;
     public bool doSlamEffects = true;
 
     private void Start()
