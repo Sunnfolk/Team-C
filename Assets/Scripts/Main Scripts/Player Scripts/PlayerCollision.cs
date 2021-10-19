@@ -20,7 +20,7 @@ public class PlayerCollision : MonoBehaviour
         {
             _Movement.isDead = true;
             _Movement.canMove = false;
-            shaker.Shake(0.6f, 0.15f);
+            shaker.Shake(0.1f, 0.1f);
             _Animation.PlayDeathAnimation();
             _Audio.DeathAudio();
         }
