@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
         jump = Keyboard.current.spaceKey.wasPressedThisFrame;
         longJump = Keyboard.current.spaceKey.isPressed;
 
-        if (Keyboard.current.rKey.wasPressedThisFrame)
+        if (Keyboard.current.rKey.wasPressedThisFrame && !pause)
         {
             SceneController.ResetScene();
         }

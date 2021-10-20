@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3352943048219236982, guid: 06ed1877d9bf8314fb4e3b946eb1f164, type: 3}
+      propertyPath: _FadeCanvas
+      value: 
+      objectReference: {fileID: 1080550546}
     - target: {fileID: 3352943048219236983, guid: 06ed1877d9bf8314fb4e3b946eb1f164, type: 3}
       propertyPath: shaker
       value: 

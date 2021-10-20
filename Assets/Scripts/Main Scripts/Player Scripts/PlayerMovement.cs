@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _Input;
     private Rigidbody2D _Rigidbody2D;
     private Collision _Collision;
+    [SerializeField] private Animator _FadeCanvas;
 
     /* LONG JUMP */
     [HideInInspector] public bool isJumping;
@@ -29,12 +30,14 @@ public class PlayerMovement : MonoBehaviour
     
     /* MISC */
     public float fallDistance;
+    private bool fadeOut;
 
     private void Start()
     {
         isDead = false;
         diedByPitTimer = diedByPitMaxTimer;
         canMove = false;
+        fadeOut = false;
         
         _Input = GetComponent<PlayerInput>();
         _Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -60,8 +63,13 @@ public class PlayerMovement : MonoBehaviour
 
             if (diedByPitTimer > 0)
             {
-                _Rigidbody2D.velocity = new Vector3(0f, Time.deltaTime * -600f, 0f);
+                _Rigidbody2D.velocity = new Vector3(0f, Time.deltaTime * -150f, 0f);
                 diedByPitTimer -= Time.deltaTime;
+                if (diedByPitTimer <= 1 && !fadeOut)
+                {
+                    fadeOut = true;
+                    _FadeCanvas.Play("FadeOut");
+                }
             }
             else
             {
