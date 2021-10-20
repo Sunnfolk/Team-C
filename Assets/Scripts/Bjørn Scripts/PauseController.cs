@@ -26,12 +26,14 @@ public class PauseController : MonoBehaviour
         {
             _PauseCanvas.SetActive(true);
             _AudioCanvas.SetActive(false);
+            _ControlsCanvas.SetActive(false);
             _WasPaused = true;
         }
         else if (!_Input.pause && _WasPaused)
         {
             _PauseCanvas.SetActive(false);
             _AudioCanvas.SetActive(false);
+            _ControlsCanvas.SetActive(false);
             _WasPaused = false;
         }
         
