@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerInput _Input;
     private Rigidbody2D _Rigidbody;
     private TimmyAudio _Audio;
+    [SerializeField] private Animator _FadeImageAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -70,5 +71,10 @@ public class PlayerAnimation : MonoBehaviour
     private void PlayDeathSound()
     {
         _Audio.DeathAudio();
+    }
+
+    private void FadeOut()
+    {
+        _FadeImageAnimator.Play("FadeOut");
     }
 }
