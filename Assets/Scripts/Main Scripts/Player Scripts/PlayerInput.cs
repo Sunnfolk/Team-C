@@ -1,27 +1,46 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
     [HideInInspector] public Vector2 moveVector;
     [HideInInspector] public bool jump;
-    [HideInInspector] public bool longJump;
+    [HideInInspector] public float longJump;
     [HideInInspector] public bool pause;
-
+    [HideInInspector] public bool goBackInMenu;
+    
+    //Get Input Controls
+    private InputActions _Input;
+    
+    private void Awake()
+    {
+        _Input = new InputActions();
+    }
+    private void OnEnable()
+    {
+        _Input.Enable();
+    }
+    private void OnDisable()
+    {
+        _Input.Disable();
+    }
+    
+    
+    
     private void Update()
     {
-        moveVector.x = (Keyboard.current.dKey.isPressed ? 1f : 0f) + (Keyboard.current.aKey.isPressed ? -1f : 0f);
-        moveVector.y = (Keyboard.current.wKey.isPressed ? 1f : 0f) + (Keyboard.current.sKey.isPressed ? -1f : 0f);
+        moveVector = _Input.Player.Move.ReadValue<Vector2>();
 
-        jump = Keyboard.current.spaceKey.wasPressedThisFrame;
-        longJump = Keyboard.current.spaceKey.isPressed;
+        jump = _Input.Player.Jump.triggered;
+        longJump = _Input.Player.Jump.ReadValue<float>();
 
-        if (Keyboard.current.rKey.wasPressedThisFrame && !pause)
+        goBackInMenu = _Input.Player.GoBackInMenu.triggered;
+
+        if (_Input.Player.ResetLevel.triggered && !pause)
         {
             SceneController.ResetScene();
         }
 
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (_Input.Player.Pause.triggered)
         {
             pause = !pause;
         }

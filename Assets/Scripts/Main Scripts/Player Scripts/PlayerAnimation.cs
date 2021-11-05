@@ -48,7 +48,7 @@ public class PlayerAnimation : MonoBehaviour
 
             if (_Input.moveVector.x != 0)
             {
-                transform.localScale = new Vector2(_Input.moveVector.x * 2f, 2f);
+                transform.localScale = new Vector2(Mathf.Sign(_Input.moveVector.x) * 2f, 2f);
             }
         }
     }

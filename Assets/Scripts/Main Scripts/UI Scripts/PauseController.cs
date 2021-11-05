@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PauseController : MonoBehaviour
     [SerializeField] private GameObject _ControlsCanvas;
 
     private bool _WasPaused;
+    
+    [SerializeField] private GameObject pauseFirstButton, audioFirstButton, audioClosedButton, controlsFirstButton, controlsClosedButton;
 
     private void Start()
     {
@@ -21,6 +24,12 @@ public class PauseController : MonoBehaviour
     
     private void Update()
     {
+        if (_Input.goBackInMenu)
+        {
+            if (_AudioCanvas.activeSelf) EnterPause(audioClosedButton);
+            else if (_ControlsCanvas.activeSelf) EnterPause(controlsClosedButton);
+            else _Input.pause = false;
+        }
         //Opens and closes pause menu when _Input.pause was pressed this frame
         if (_Input.pause && !_WasPaused)
         {
@@ -46,7 +55,10 @@ public class PauseController : MonoBehaviour
             AudioListener.pause = true;
             _Movement.canMove = false;
             justPaused = true;
+            
+            UISetSelected(pauseFirstButton);
         }
+        //Unpauses game
         else if (!_Input.pause)
         {
             if (!justPaused) return;
@@ -64,12 +76,16 @@ public class PauseController : MonoBehaviour
         _PauseCanvas.SetActive(false);
         _AudioCanvas.SetActive(true);
         _ControlsCanvas.SetActive(false);
+        
+        UISetSelected(audioFirstButton);
     }
-    public void EnterPause()
+    public void EnterPause(GameObject obj)
     {
         _PauseCanvas.SetActive(true);
         _AudioCanvas.SetActive(false);
         _ControlsCanvas.SetActive(false);
+        
+        UISetSelected(obj);
     }
     
     public void EnterControls()
@@ -77,6 +93,8 @@ public class PauseController : MonoBehaviour
         _AudioCanvas.SetActive(false);
         _PauseCanvas.SetActive(false);
         _ControlsCanvas.SetActive(true);
+        
+        UISetSelected(controlsFirstButton);
     }
 
     //Opens the Audio Canvas
@@ -91,5 +109,12 @@ public class PauseController : MonoBehaviour
         AudioListener.pause = false;
         _Movement.canMove = true;
         SceneController.LoadScene("MainScene");
+    }
+
+    //Set selected UI object
+    public void UISetSelected(GameObject obj)
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(obj);
     }
 }
